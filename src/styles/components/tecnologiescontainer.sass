@@ -1,0 +1,95 @@
+@use '../variables'
+@use '../mixins'
+
+.technologies-container
+    margin-bottom: 1rem
+
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        .technology-card
+            border: 1px solid #333
+            width: 45%
+            border-radius: variables.$card-border-radius
+            perspective: 1000px
+            position: relative
+            .flip
+                transition: transform 0.5s
+                transform-style: preserve-3d
+                .front-card, .back-card
+                    backface-visibility: hidden
+                .back-card#back
+                    transform: rotateY(180deg) translateY(-50%)
+                    position: absolute
+                    top: 50%
+                    
+                    right: 1rem
+                    width: 100%
+                    p
+                        color: variables.$text-color
+                .front-card
+                    @include mixins.center()
+                    gap: 1rem
+                    padding: 1rem
+                    width: 100%
+                    height: 100%
+                    .warning
+                        font-size:12px
+
+            &:hover .flip
+                transform: rotateY(180deg)
+
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
+
+            svg
+                font-size: 6rem
+
+        #html
+            svg
+                color: #e44d26
+
+        #css
+            svg
+                color: #1572b6
+
+        #js
+            svg
+                color: #f0db4f
+
+        #node
+            svg
+                color: #83cd29
+
+        #python
+            svg
+                color: #428eff
+
+        #react
+            svg
+                color: #61dafb
+
+        #php
+            svg
+                color: #4f5b93
+        #TypeScript
+            svg
+                color:#3178c6
+        #styledComponent
+            svg
+                color: #fff
+
+@media(max-width: 1024px)
+    .technologies-container
+        .technologies-grid
+            .technology-card
+                width: 100%
+
+@media(min-width: 768px)
+    .technologies-container
+        .technologies-grid
+            .technology-card
+                gap: 3rem

@@ -1,0 +1,40 @@
+@use  '../variables'
+#portifolio
+    display: flex
+    flex-wrap: wrap
+    padding: 3rem
+    gap: 3rem
+    h1
+        width: 100%
+        font-size: 5rem
+        margin-bottom: 4rem
+        color: #fff
+        letter-spacing: -4px
+        span
+            filter: brightness(0) invert(1)
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+            animation: colorCycle 10s infinite ease-in-out
+            padding: 0 0.67rem
+            background-image: variables.$gradient
+
+@media(max-width: 1024px)
+    #portifolio
+        padding: 1rem
+        flex-direction: column
+        flex-wrap: nowrap
+        h1
+            font-size: 4rem
+@media(min-width: 768px)
+    #portifolio
+        padding: 2rem
+
+@keyframes colorCycle
+    0%,
+    55%
+        filter: brightness(0) invert(1)
+
+    11%,
+    33%
+        filter: none
