@@ -10,17 +10,17 @@ const projects = [
   },
   {
     id: 516116825,
-    name: "Conversor de moedas",
-    url: "https://github.com/ViniciusCosta126/Conversor-de-moedas",
-    language: "JavaScript",
-    descricao:"Projeto que realiza a conversão de algumas das principais moedas"
+    name: "MovieLib",
+    url: "https://movielibs-vinicius.netlify.app/",
+    language: "React",
+    descricao:"Projeto que simula uma loja de venda de filmes, com a possibilidade de adicionar a lista de favoritos e carrinho"
   },
   {
     id: 516110140,
-    name: "MovieLib",
-    url: "https://github.com/ViniciusCosta126/MovieLib",
-    language: "JavaScript",
-    descricao:"Projeto que exibe conteudo sobre filmes, realizando consumo de api e usando react-router-dom"
+    name: "Ediaristas",
+    url: "ediariastas.netlify.app",
+    language: "React/NextJS",
+    descricao:"Projeto que realiza a pesquisa de diariasta na regiao para achar a mais perto e informações"
   },
   {
     id: 516114927,
