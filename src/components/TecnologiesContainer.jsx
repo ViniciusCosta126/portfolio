@@ -93,24 +93,6 @@ const technologies = [
       "linear-gradient(90deg, rgba(250,82,82,1) 50%, rgba(128,128,128,1) 50%)",
     descricao:"Conhecimento em realizara lib para criação de componentes personalizados e responsivos"
   },
-  {
-    id: "python",
-    name: "Python",
-    icon: <DiPython />,
-    habilidade:
-      "linear-gradient(90deg, rgba(250,82,82,1) 75%, rgba(128,128,128,1) 75%)",
-    descricao:
-      "Conhecimento para criação de scripts de automação para agilizar o trabalho, e tambem conhecimento para criação de APis utilizando Flask",
-  },
-  {
-    id: "php",
-    name: "PHP",
-    icon: <DiPhp />,
-    habilidade:
-      "linear-gradient(90deg, rgba(250,82,82,1) 30%, rgba(128,128,128,1) 30%)",
-    descricao:
-      "Conhecimento intermediario em php, para manutenção de sites e blogs em wordpress",
-  },
 ];
 
 const TecnologiesContainer = () => {
